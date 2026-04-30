@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -312,23 +313,7 @@
       font-weight: 300;
     }
 
-    /* LIVEPERSON TEST BADGE */
-    .lp-notice {
-      position: fixed;
-      bottom: 90px;
-      left: 1.5rem;
-      background: rgba(19, 19, 26, 0.92);
-      border: 1px solid rgba(108, 99, 255, 0.4);
-      border-radius: 10px;
-      padding: 0.75rem 1rem;
-      font-size: 0.75rem;
-      color: var(--muted);
-      backdrop-filter: blur(8px);
-      z-index: 50;
-      max-width: 220px;
-      line-height: 1.5;
-    }
-    .lp-notice strong { color: var(--accent); display: block; margin-bottom: 0.2rem; }
+
 
     /* FOOTER */
     footer {
@@ -361,6 +346,25 @@
 </head>
 <body>
 
+<!-- LIVEPERSON WEB TAG -->
+<script type="text/javascript">
+window.lpTag=window.lpTag||{},typeof window.lpTag._tagCount==="undefined"?(window.lpTag={
+site:"24491002",
+section:lpTag.section||[],
+tagletSection:lpTag.tagletSection||null,
+autoStart:lpTag.autoStart!==!1,
+ovr:lpTag.ovr||{},
+_cl:lpTag._cl||[],
+_tagCount:1,
+protocol:"https:",
+events:{bind:function(t,i,s){lpTag._cl.push([t,i,s])},trigger:function(t,i,s){lpTag._cl.push([t,i,s,!0])}}
+},function(){var t=document.createElement("script");
+t.async=!0,t.src="https://lptag.liveperson.net/tag/tag.js?site=24491002";
+var i=document.getElementsByTagName("script")[0];
+i.parentNode.insertBefore(t,i)}()):lpTag._tagCount+=1;
+</script>
+<!-- END LIVEPERSON WEB TAG -->
+
 <nav>
   <div class="logo">TechNova</div>
   <ul>
@@ -383,7 +387,7 @@
     and ready to help — just click the chat button below to get started.
   </p>
   <div class="hero-actions">
-    <button class="btn-primary">💬 Chat with Us</button>
+    <button class="btn-primary" onclick="lpTag.newPage(window.location.href, {})">💬 Chat with Us</button>
     <button class="btn-ghost">Browse Docs →</button>
   </div>
 </section>
@@ -449,35 +453,12 @@
   </div>
 </section>
 
-<!-- Dev notice badge -->
-<div class="lp-notice">
-  <strong>🧪 LivePerson Test Page</strong>
-  Site ID: 24491002
-</div>
+
 
 <footer>
   <div class="footer-logo">TechNova</div>
-  <p>© 2026 TechNova Inc. — LivePerson Integration Test Page</p>
+  <p>© 2025 TechNova Inc. — LivePerson Integration Test Page</p>
 </footer>
-
-<!-- BEGIN LIVEPERSON WEB TAG - Moved to end of body for performance and error prevention -->
-<script type="text/javascript">
-window.lpTag=window.lpTag||{},typeof window.lpTag._tagCount==="undefined"?(window.lpTag={
-site:"24491002",
-section:lpTag.section||[],
-tagletSection:lpTag.tagletSection||null,
-autoStart:lpTag.autoStart!==!1,
-ovr:lpTag.ovr||{},
-_cl:lpTag._cl||[],
-_tagCount:1,
-protocol:"https:",
-events:{bind:function(t,i,s){lpTag._cl.push([t,i,s])},trigger:function(t,i,s){lpTag._cl.push([t,i,s,!0])}}
-},function(){var t=document.createElement("script");
-t.async=!0,t.src="https://lptag.liveperson.net/tag/tag.js?site=24491002";
-var i=document.getElementsByTagName("script")[0];
-i.parentNode.insertBefore(t,i)}()):lpTag._tagCount+=1;
-</script>
-<!-- END LIVEPERSON WEB TAG -->
 
 </body>
 </html>
